@@ -1,16 +1,26 @@
 # AI Resume Screening System
 
-Features:
-- Resume PDF Upload
-- PDF Text Extraction
-- ATS Score Calculation
-- Missing Skills Detection
-- Skill Extraction
-- Interview Question Generation
-- Resume Analysis API
+## Project Overview
+AI Resume Screening System is a Python-based application that automatically analyzes resumes and matches them with job descriptions. It extracts key skills, calculates ATS score, detects missing skills, and generates interview questions to help recruiters evaluate candidates efficiently.
 
-Tech Stack:
+## Features
+- Resume PDF Upload and Processing
+- Automatic Text Extraction from Resume
+- Skill Extraction using NLP techniques
+- ATS Score Calculation based on job description match
+- Missing Skills Identification
+- Interview Question Generation
+- REST API built with FastAPI
+- Swagger UI for API testing
+
+## Tech Stack
 - Python
 - FastAPI
 - pdfplumber
-- Swagger UI
+- NLP
+- Uvicorn
+
+## How to Run
+```bash
+pip install -r requirements.txt
+uvicorn main:app --reload
